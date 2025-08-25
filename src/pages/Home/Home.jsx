@@ -4,8 +4,8 @@ import WhyChooseSection from './Components/WhyChooseSection'
 import HowItWorksSection from './Components/HowItWorksSection'
 import PricingSection from './Components/PricingSection'
 import SocialProofSection from './Components/SocialProofSection'
-import AboutBrandSection from './Components/AboutBrandSection'
 import FinalCTASection from './Components/FinalCTASection'
+import ModernBrandSection from './Components/AboutBrandSection'
 
 
 function Home() {
@@ -16,7 +16,7 @@ function Home() {
       <HowItWorksSection />
       <PricingSection />
       <SocialProofSection />
-      <AboutBrandSection />
+      <ModernBrandSection />
       <FinalCTASection />
     </div>
   )
