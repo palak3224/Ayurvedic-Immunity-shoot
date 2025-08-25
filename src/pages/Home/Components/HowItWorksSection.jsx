@@ -27,19 +27,19 @@ const HowItWorksSection = () => {
       number: "01",
       title: "Shake the bottle",
       description: "Give it a good shake to mix all the natural ingredients perfectly",
-      delay: 0.2
+      delay: 0.05
     },
     {
       number: "02", 
       title: "Take a quick 60ml shot",
       description: "One small shot is all you need for maximum wellness benefits",
-      delay: 0.4
+      delay: 0.1
     },
     {
       number: "03",
       title: "Feel refreshed & energized all day",
       description: "Experience natural energy and improved immunity throughout your day",
-      delay: 0.6
+      delay: 0.15
     }
   ];
 
@@ -55,7 +55,6 @@ const HowItWorksSection = () => {
 
       {/* Parallax Background Image */}
       <motion.div 
-        // style={{ , scale }}
         className="absolute inset-0 z-0"
       >
         <motion.img
@@ -78,7 +77,8 @@ const HowItWorksSection = () => {
         <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
           whileInView={{ opacity: 0.04, scale: 1 }}
-          transition={{ duration: 2 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true, amount: 0.1 }}
           className="text-[8rem] md:text-[12rem] lg:text-[16rem] xl:text-[20rem] font-black text-green-800 select-none rotate-12"
           style={{ fontFamily: 'Philosopher, serif' }}
         >
@@ -91,16 +91,17 @@ const HowItWorksSection = () => {
         
         {/* Section Header */}
         <motion.div
-          initial={{ opacity: 0, y: -80 }}
+          initial={{ opacity: 0, y: -50 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.2 }}
-          viewport={{ once: true }}
+          transition={{ duration: 0.4, delay: 0.05 }}
+          viewport={{ once: true, amount: 0.1 }}
           className="text-center mb-16 lg:mb-24"
         >
           <motion.div
             initial={{ scale: 0 }}
             whileInView={{ scale: 1 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
+            transition={{ duration: 0.3, delay: 0.1 }}
+            viewport={{ once: true, amount: 0.1 }}
             className="inline-flex items-center gap-3 bg-green-800/10 backdrop-blur-sm rounded-full px-8 py-4 mb-8 border border-green-700/20"
           >
             <Sparkles className="w-6 h-6 text-green-700" />
@@ -123,7 +124,8 @@ const HowItWorksSection = () => {
           <motion.p
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.8, delay: 0.8 }}
+            transition={{ duration: 0.3, delay: 0.15 }}
+            viewport={{ once: true, amount: 0.1 }}
             className="text-xl md:text-2xl text-green-800/80 font-light max-w-2xl mx-auto leading-relaxed"
             style={{ fontFamily: 'Philosopher, serif' }}
           >
@@ -137,10 +139,10 @@ const HowItWorksSection = () => {
             {steps.map((step, index) => (
               <motion.div
                 key={index}
-                initial={{ opacity: 0, y: 100 }}
+                initial={{ opacity: 0, y: 60 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: step.delay }}
-                viewport={{ once: true }}
+                transition={{ duration: 0.4, delay: step.delay }}
+                viewport={{ once: true, amount: 0.2 }}
                 className="relative group"
               >
                 {/* Step Card */}
@@ -157,9 +159,10 @@ const HowItWorksSection = () => {
                     {/* Step Number Badge */}
                     <div className="flex items-center justify-center mb-8">
                       <motion.div
-                        initial={{ scale: 0, rotate: -180 }}
+                        initial={{ scale: 0, rotate: -90 }}
                         whileInView={{ scale: 1, rotate: 0 }}
-                        transition={{ duration: 0.8, delay: step.delay + 0.2 }}
+                        transition={{ duration: 0.4, delay: step.delay + 0.1 }}
+                        viewport={{ once: true, amount: 0.2 }}
                         className="relative"
                       >
                         {/* Outer Ring */}
@@ -181,9 +184,10 @@ const HowItWorksSection = () => {
 
                     {/* Step Content */}
                     <motion.h3
-                      initial={{ opacity: 0, x: -30 }}
+                      initial={{ opacity: 0, x: -20 }}
                       whileInView={{ opacity: 1, x: 0 }}
-                      transition={{ duration: 0.6, delay: step.delay + 0.6 }}
+                      transition={{ duration: 0.3, delay: step.delay + 0.2 }}
+                      viewport={{ once: true, amount: 0.2 }}
                       className="text-2xl lg:text-3xl font-bold text-green-900 mb-4 leading-tight"
                       style={{ fontFamily: 'Philosopher, serif' }}
                     >
@@ -193,7 +197,8 @@ const HowItWorksSection = () => {
                     <motion.p
                       initial={{ opacity: 0 }}
                       whileInView={{ opacity: 1 }}
-                      transition={{ duration: 0.6, delay: step.delay + 0.8 }}
+                      transition={{ duration: 0.3, delay: step.delay + 0.25 }}
+                      viewport={{ once: true, amount: 0.2 }}
                       className="text-lg text-green-800/70 leading-relaxed font-light"
                       style={{ fontFamily: 'Philosopher, serif' }}
                     >
@@ -222,7 +227,8 @@ const HowItWorksSection = () => {
                   <motion.div
                     initial={{ opacity: 0, scale: 0 }}
                     whileInView={{ opacity: 1, scale: 1 }}
-                    transition={{ duration: 0.6, delay: step.delay + 1 }}
+                    transition={{ duration: 0.3, delay: step.delay + 0.3 }}
+                    viewport={{ once: true, amount: 0.2 }}
                     className="hidden md:flex absolute -right-8 lg:-right-12 top-1/2 transform -translate-y-1/2 z-20"
                   >
                     <motion.div
@@ -241,10 +247,10 @@ const HowItWorksSection = () => {
 
         {/* CTA Section */}
         <motion.div
-          initial={{ opacity: 0, y: 60 }}
+          initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.8 }}
-          viewport={{ once: true }}
+          transition={{ duration: 0.4, delay: 0.2 }}
+          viewport={{ once: true, amount: 0.2 }}
           className="text-center mt-16 lg:mt-24"
         >
           <motion.button
