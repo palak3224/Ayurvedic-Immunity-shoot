@@ -147,7 +147,7 @@ const HowItWorksSection = () => {
                 <motion.div
                   whileHover={{ y: -10, scale: 1.02 }}
                   transition={{ duration: 0.3 }}
-                  className="relative bg-amber-50/80 backdrop-blur-xl rounded-3xl p-8 lg:p-10 shadow-2xl border border-green-200/30 overflow-hidden"
+                  className="relative h-96 bg-amber-50/80 backdrop-blur-xl rounded-3xl p-8 lg:p-10 shadow-2xl border border-green-200/30 overflow-hidden"
                 >
                   {/* Card Background Glow */}
                   <div className="absolute inset-0 bg-gradient-to-br from-amber-100/50 via-transparent to-green-100/30 rounded-3xl"></div>
