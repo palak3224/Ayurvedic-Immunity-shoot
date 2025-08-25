@@ -160,7 +160,7 @@ const AboutBrandSection = () => {
             <div className="absolute top-1/3 right-1/4 w-32 h-32 bg-green-300/10 rounded-full blur-2xl"></div>
 
             {/* Background Text */}
-            <div className="absolute inset-0 flex items-center justify-center z-0 pointer-events-none">
+            <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
                 <div 
                     className={`text-[4rem] sm:text-[8rem] md:text-[12rem] lg:text-[16rem] xl:text-[20rem] font-black text-green-800 select-none rotate-3 font-philosopher ${isVisible ? 'animate-fade-in delay-400' : 'opacity-0'}`}
                     style={{ opacity: 0.03 }}
@@ -169,7 +169,7 @@ const AboutBrandSection = () => {
                 </div>
             </div>
 
-            <div className="mx-auto px-4 sm:px-6 lg:px-52 relative z-10 py-20">
+            <div className="mx-auto px-4 sm:px-6 lg:px-52 relative py-20">
 
                 {/* Section Header */}
                 <div className={`text-center mb-16 lg:mb-20 ${isVisible ? 'animate-slide-up delay-200' : 'opacity-0'}`}>
@@ -227,7 +227,7 @@ const AboutBrandSection = () => {
                             <div className="absolute inset-0 bg-gradient-to-br from-green-700/20 via-transparent to-green-900/30 rounded-3xl"></div>
                             <div className="absolute -top-10 -right-10 w-32 h-32 bg-amber-400/10 rounded-full blur-2xl"></div>
 
-                            <div className="relative z-10">
+                            <div className="relative">
                                 {/* Story Header */}
                                 <div className={`mb-8 ${isVisible ? 'animate-slide-up delay-1000' : 'opacity-0'}`}>
                                     <div className="flex items-center gap-3 mb-4">
@@ -263,9 +263,9 @@ const AboutBrandSection = () => {
                                 {/* CTA Button */}
                                 <div className={`${isVisible ? 'animate-slide-up delay-2000' : 'opacity-0'}`}>
                                     <button className="group relative bg-gradient-to-r from-amber-500 via-amber-400 to-amber-500 text-green-900 font-bold py-4 lg:py-5 px-8 lg:px-10 rounded-full shadow-xl hover:shadow-2xl transition-all duration-500 flex items-center gap-3 text-lg overflow-hidden hover-scale hover-lift font-philosopher">
-                                        <Shield className="w-6 h-6 group-hover:scale-110 transition-transform duration-300 relative z-10" />
-                                        <span className="relative z-10">Shop with Confidence</span>
-                                        <ArrowRight className="w-5 h-5 relative z-10" />
+                                        <Shield className="w-6 h-6 group-hover:scale-110 transition-transform duration-300" />
+                                        <span>Shop with Confidence</span>
+                                        <ArrowRight className="w-5 h-5" />
 
                                         <div className="absolute inset-0 bg-gradient-to-r from-amber-400 to-amber-600 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                                         <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
